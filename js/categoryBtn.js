@@ -6,6 +6,7 @@
     fetch("https://openapi.programming-hero.com/api/peddy/categories")
     .then(res => res.json())
     .then(data => displayCategories(data.categories))
+    .catch(error => console.log(error));
     
 
  };
@@ -26,7 +27,7 @@ const displayCategories = (categories)=>{
         const btnContainer = document.createElement('button');
         btnContainer.classList="w-40 bg-gray-200 p-4 rounded relative text-center"
         btnContainer.innerHTML = `
-                                <img class="absolute w-8 h-8"  src="${item.category_icon}"/>
+                                <img class="absolute w-8 h-8"  src="${item.category_icon? item.category_icon:'' }"/>
                                 ${item.category}`
         btnSection.append(btnContainer)
     });

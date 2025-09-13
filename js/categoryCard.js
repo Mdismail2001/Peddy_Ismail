@@ -21,17 +21,17 @@ const displayCategoryCard = (pets)=>{
         // console.log(item);
         const cardDiv = document.createElement('div');
             cardDiv.classList ="";
-            cardDiv.innerHTML = `<img class="w-auto h-50 mb-5" src="${item.image ? item.image : 'https://static.vecteezy.com/system/resources/previews/012/084/533/non_2x/cartoon-wild-animals-on-white-background-vector.jpg'}"/>
+            cardDiv.innerHTML = `<a href="/html/details.html?petId=${item.petId}">
+                                <img class="w-auto h-50 mb-5" src="${item.image ? item.image : 'https://static.vecteezy.com/system/resources/previews/012/084/533/non_2x/cartoon-wild-animals-on-white-background-vector.jpg'}"/>
                                 <h1></h1>
                                 <div><img src=""/><p> Breed: ${item.breed ? item.breed : "breed unknown"}</p></div>
                                 <div><img src=""/><p> Birth: ${item.date_of_birth ? item.date_of_birth : "date_of_birth unknown"}</p></div>
                                 <div><img src=""/><p> Gender: ${item.gender ? item.gender : "gender unknown"}</p></div>
                                 <div><img src=""/><p> price: ${item.price ? item.price : "price unknown"}$</p></div>
-
+                                </a>
                                 `
-
             cardsContainer.append(cardDiv);
-        
+
     });
     
 };
