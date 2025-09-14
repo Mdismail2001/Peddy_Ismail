@@ -26,6 +26,7 @@ const displayCategories = (categories)=>{
         // console.log(item)
         const btnContainer = document.createElement('button');
         btnContainer.classList="w-40 bg-gray-200 p-4 rounded relative text-center"
+        btnContainer.onclick = () => buttonHanler(item.category);//call buttonHanler function and pass categori name as a arguments
         btnContainer.innerHTML = `
                                 <img class="absolute w-8 h-8"  src="${item.category_icon? item.category_icon:'' }"/>
                                 ${item.category}`

@@ -15,8 +15,11 @@ loadCategoryCard();
 
 // display category card in index page 
 const cardsContainer = document.getElementById('card_container');
+        
 const displayCategoryCard = (pets)=>{
     // console.log(pets);
+    cardsContainer.innerHTML=""; //emty innerHTML for display botton type card
+
     pets.forEach(item => {
         // console.log(item);
         const cardDiv = document.createElement('div');
