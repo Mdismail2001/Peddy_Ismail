@@ -23,7 +23,7 @@ const displayCategoryCard = (pets)=>{
     pets.forEach(item => {
         // console.log(item);
         const cardDiv = document.createElement('div');
-            cardDiv.classList ="card-div";
+            cardDiv.classList ="card-div ";
             cardDiv.innerHTML = `
                                 <img class="w-auto h-50 mb-5 rounded" src="${item.image ? item.image : 'https://static.vecteezy.com/system/resources/previews/012/084/533/non_2x/cartoon-wild-animals-on-white-background-vector.jpg'}"/>
                                 <h1></h1>

@@ -34,27 +34,31 @@
         </div>
      </section>
      <!-- categories Button section -->
-     <section id="categoryBtncontainer" class="flex flex-wrap gap-10 justify-between mt-10 w-10/12 mx-auto">
+     <section id="categoryBtncontainer" class="flex flex-wrap gap-10 justify-between mt-10 w-11/12 mx-auto">
         <!-- button come form categoryBtn.js and show here category button -->
      </section>
 
 
     <!-- sort button and best deal -->
-    <div class="flex flex-wrap w-10/12  mx-auto mt-10 justify-between items-center">
+    <div class="flex flex-wrap w-11/12  mx-auto mt-10 justify-between items-center">
         <p class="font-bold text-2xl">Best Deal For you</p>
-        <button class="bg-gray-200 p-2 rounded">Sort by Price</button>
+        <button onclick="sortBybtn()" class="bg-gray-200 p-2 rounded">Sort by Price</button>
     </div>
 
     <!-- category card section -->
-     <section id="card_container" class="flex  w-8/12 ml-17 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-10">
-        <!-- category card show here from categoryCard.js -->
-     </section>
-
+     <section class="flex justify-center items-start  bg-gray-100 gap-10  mx-auto mt-5">
+        <div id="card_container" class="flex  w-8/12 ml-17 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5   ">
+            <!-- category card show here from categoryCard.js -->
+        </div>
+        <div id="sort-categories" class=" w-3/12 grid grid-cols-1 md:grid-cols-1 lg:grid-cols- gap-5 pr-13 ">
+            <!-- sort category section -->
+        </div>
+    </section>
      <!-- js file added section -->
       <script src="/js/categoryBtn.js"></script>
       <script src="/js/categoryCard.js"></script>
       <script src="/js/adopt.js"></script>
-      <script src="/js/searchCategory.js"></script>
       <script src="/js/buttonHndler.js"></script>
+      <script src="/js/sort.js"></script>
 </body>
 </html>
